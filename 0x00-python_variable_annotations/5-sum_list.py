@@ -10,4 +10,4 @@ def sum_list(input_list: list) -> float:
     for val in input_list:
         sum_ += val
     # could be sum(input_list)
-    return int(sum_)
+    return sum_
