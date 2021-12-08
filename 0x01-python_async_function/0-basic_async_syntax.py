@@ -9,6 +9,7 @@ import random
 
 async def wait_random(max_dalay: int = 10) -> float:
     """waits for a rondom delay and eventually returns it"""
-    i = random.uniform(0, max_dalay)
-    await asyncio.sleep(i)
-    return i
+    max_delay = random.uniform(0, max_dalay)
+    await asyncio.sleep(max_delay)
+    max_delay = random.uniform(0, max_dalay)
+    return max_delay
